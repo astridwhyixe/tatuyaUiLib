@@ -150,6 +150,23 @@ function Library.Main(text : string)
         Draggable = true
     })
 
+        local LogoIcon = make("ImageLabel",{
+        Parent = Main;
+        Name = "LogoIcon";
+        AnchorPoint = Vector2.new(0,0);
+        Size = UDim2.new(0,55,0,55);
+        Position = UDim2.new(1,-55,0,0);
+        BorderSizePixel = 0;
+        BackgroundTransparency = 1;
+        Image = "rbxassetid:11115555";
+        ImageTransparency = 0;
+        ImageColor3 = Color3.fromRGB(255,255,255);
+        ScaleType = Enum.ScaleType["Crop"];
+        ZIndex = 3;
+    })
+    
+    
+    
     local MainStroke = make("UIStroke",{
         Parent = Main;
         ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
